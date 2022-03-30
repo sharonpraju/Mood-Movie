@@ -54,7 +54,7 @@ function Banner() {
                         <h1 className='title'>{banner.title}</h1>
                         <br/>
                         <br/>
-                        <a className="button">Rating : {banner.vote_average}</a>
+                        <button className="button">Rating : {banner.vote_average}</button>
                         <br/>
                         <div className="select_div">
                             <select className="select" onChange={(e)=>{setGenre(`&with_genre=${e.target.value}`);}}>
@@ -65,10 +65,10 @@ function Banner() {
                                     })
                                 }
                             </select>
-                            <a className="button-x" onClick={movieGenre}>Search</a>
+                            <button className="button-x" onClick={movieGenre}>Search</button>
                         </div>
                         <br/><br/>
-                        <a className="button-x" onClick={movieRandom}>Get Random Movie</a>
+                        <button className="button-x" onClick={movieRandom}>Get Random Movie</button>
                     </center>
                     <Overview overview={banner.overview}></Overview>
                 </div>
